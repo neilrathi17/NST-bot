@@ -1,0 +1,3 @@
+.auth.json
+#lol writing comment right now
+node_modules/

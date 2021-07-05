@@ -1,0 +1,22 @@
+{
+  "name": "nst-bot",
+  "version": "1.0.0",
+  "description": "bot for lols",
+  "main": "bot.js",
+  "author": "Neil Rathi",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "discord.io": "^2.5.3",
+    "discord.js": "^12.5.3",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-static": "^4.4.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "winston": "^3.3.3",
+    "ytdl-core": "^4.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
