@@ -106,12 +106,16 @@ client.on("message",function(message)
          {name:'~tellme:',value:'dj \nsamson\nsaurav\ntej'},
          {name:'~whereis',value:'samson\nsaurav\ntej'},
          {name:'~showme',value:'saurav'},
-         {name:'~av',value:'@someone'}
+         {name:'~av',value:'@someone'},
+         {name:'~slap',value:'@someone'},
+         {name:'~play',value:'\'best\': plays best song ever'},
+         {name:'~play',value:'\'youtube link\' to play it'},
+         {name:'~stop',value:'to disconnect the bot'}
      )
      message.reply(exampleEmbed)
  }
  //-------------------------------------------------------------------------------------------------------------
- //----------------------slap function---------------------------------------------------------------------------
+ //----------------------slap section---------------------------------------------------------------------------
  //-------------------------------------------------------------------------------------------------------------
  else if(command==='slap')
  {
@@ -139,6 +143,15 @@ client.on("message",function(message)
  {
      stop(message,serverQueue);
      return;
+ }
+ else if (command=="skip")
+ {
+    skip(message,serverQueue);
+    return
+ }
+ else 
+ {
+    message.reply("not a valid command try ~help for more")
  }
 
 });
@@ -215,7 +228,7 @@ async function execute(message,serverQueue)
         return message.channel.send("bot requires permissions to join and speak")
     }
     var song ={}
-    if(args[1]!=='')
+    if(args[1]==='best')
     {
          song=
     {
@@ -300,5 +313,16 @@ function play(guild,song)
     dispatcher.setVolumeLogarithmic(serverQueue.volume/5);
     serverQueue.textChannel.send(`start playing :: **${song.title}**`);
 }
+//------------------------------skip----------------------------------------------
+//--------------------------------------------------------------------------------
+function skip(message, serverQueue) {
+    if (!message.member.voice.channel)
+      return message.channel.send(
+        "You have to be in a voice channel to stop the music!"
+      );
+    if (!serverQueue)
+      return message.channel.send("There is no song that I could skip!");
+    serverQueue.connection.dispatcher.end();
+  }
 
 //https://www.youtube.com/watch?v=OQ113-EpZvM
