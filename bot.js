@@ -130,7 +130,6 @@ client.on("message",function(message)
     'https://media.tenor.com/images/b3701dcada582b6980d4efb9fd8efc7b/tenor.gif']
     rng=Math.floor(Math.random()*6);
     var lol=getUserFromMention(args[0]);
-    console.log(lol+"from slapp");
      slapp(slaparray[rng],message,lol);
  }
 
@@ -193,7 +192,7 @@ function slapp(string,message,name)
     let member = message.mentions.users.first();
         const Embed = new Discord.MessageEmbed()
     .setColor('##000000')
-    .setTitle(`you just slapped ${member}`)
+    .setTitle(`you just slapped @${name.username}`)
     .setImage(string)
     message.channel.send(Embed);
 }
@@ -207,7 +206,6 @@ function getUserFromMention(mention) {
 		if (mention.startsWith('!')) {
 			mention = mention.slice(1);
 		}
-        console.log(mention +"from function")
 		return client.users.cache.get(mention);
 	}
 }
@@ -286,7 +284,7 @@ function stop(message,serverQueue)
     }
     if(!serverQueue)
     {
-        return message.channel.send('nothing to stop dumbass')
+        return message.channel.send('no music to stop')
     }
     serverQueue.songs=[];
     serverQueue.connection.dispatcher.end();
