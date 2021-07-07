@@ -48,7 +48,7 @@ client.on("message",function(message)
    
     else if(args[0]==="dj")
     {
-        exampleEmbed.title='lost samson\s diary and then laughed about it';
+        exampleEmbed.title='lost samson\s diary and then laughed about it\n Then accused samson of pestering him';
         message.reply(exampleEmbed)
     }
   
@@ -67,7 +67,7 @@ client.on("message",function(message)
    else if(command==='showme')
    {
        if(args[0]==='saurav')
-       message.reply({files:['sauravlolz.jpeg']})
+       message.reply({files:['assets/sauravlolz.jpeg']})
 
    }
   else if(command==="whereis")
