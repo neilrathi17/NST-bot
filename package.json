@@ -1,6 +1,7 @@
 {
   "name": "nst-bot",
   "version": "1.0.0",
+  "engines": {"node": "12.18.2"},
   "description": "bot for lols",
   "main": "bot.js",
   "author": "Neil Rathi",
