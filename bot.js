@@ -1,7 +1,6 @@
 var Discord = require('discord.js');
 var logger = require('winston');
-const config = require("./auth.json");
-var auth = require('./auth.json');
+//var auth = require('./auth.json');
 const client = new Discord.Client();
 var ytdl=require('ytdl-core')
 const queue = new Map();
@@ -154,7 +153,7 @@ client.on("message",function(message)
  }
 
 });
-client.login(auth.token);
+client.login(token);
 //----------------------------------------------------------------------------------------------
 function checkbday(n)
 {
