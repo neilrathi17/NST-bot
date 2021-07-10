@@ -1,5 +1,4 @@
 # NST-bot
-# Stocker
 
 > <Subtitle>
 >Nst-bot is a private bot for the navshakethat rubie discord server.
