@@ -47,7 +47,7 @@ client.on("message",function(message)
        var tellme=functions.tellme(args[0])
     const exampleEmbed = new Discord.MessageEmbed()
     .setColor('##000000')
-     exampleEmbed.title=tellme
+     exampleEmbed.description=tellme
     message.reply(exampleEmbed)
    }
    else if(command==='showme')
