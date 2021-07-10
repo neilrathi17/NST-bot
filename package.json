@@ -13,6 +13,7 @@
     "discord.js": "^12.5.3",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.4.0",
+    "findthelyrics": "^1.1.0",
     "fluent-ffmpeg": "^2.1.2",
     "ms": "^2.1.3",
     "winston": "^3.3.3",

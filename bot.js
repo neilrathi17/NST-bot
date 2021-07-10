@@ -5,6 +5,7 @@ const client = new Discord.Client();
 var ytdl=require('ytdl-core')
 var functions=require('./functions/interactions')
 var remind=require('./functions/remind')
+var lyrics=require('./functions/lyrics')
 
 const queue = new Map();
 
@@ -46,7 +47,7 @@ client.on("message",function(message)
    {
        var tellme=functions.tellme(args[0])
     const exampleEmbed = new Discord.MessageEmbed()
-    .setColor('##000000')
+    .setColor('#85850d')
      exampleEmbed.description=tellme
     message.reply(exampleEmbed)
    }
@@ -90,18 +91,20 @@ client.on("message",function(message)
    else if(command==="help")
    {
        const exampleEmbed = new Discord.MessageEmbed()
-       .setColor('##000000')
+            .setColor('#85850d')
        .setTitle("the following commands exist:")
        .addFields(
-           {name:'~tellme:',value:'dj \nsamson\nsaurav\ntej'},
-           {name:'~whereis',value:'samson\nsaurav\ntej\ndj\nneil'},
-           {name:'~showme',value:'saurav'},
+           {name:'~tellme:',value:'dj \nsamson\nsaurav\ntej',inline:true},
+           {name:'~whereis',value:'samson\nsaurav\ntej\ndj\nneil',inline:true},
+           {name:'~showme',value:'saurav',inline:true},
            {name:'~av',value:'@someone'},
            {name:'~slap',value:'@someone'},
            {name:"~hug",value:"@someone"},
-           {name:'~play',value:'\'best\': plays best song ever'},
-           {name:'~play',value:'\'youtube link\' to play it'},
-           {name:'~stop',value:'to disconnect the bot'}
+           {name:'~play',value:'\'best\': plays best song ever',inline:true},
+           {name:'~play',value:'\'youtube link\' to play it',inline:true},
+           {name:'~stop',value:'to disconnect the bot',inline:true},
+           {name:"~remindme",value:'\'time\' \'reminder\''}
+
        )
        message.reply(exampleEmbed)
    }
@@ -117,7 +120,7 @@ client.on("message",function(message)
     arr=functions.slap(args[0]);
     mention=client.users.cache.get(arr[1]);
     const Embed = new Discord.MessageEmbed()
-    .setColor('##000000')
+    .setColor('#85850d')
     .setTitle(`you just slapped @${mention.username}`)
     .setImage(arr[0])
     message.channel.send(Embed);
@@ -131,7 +134,7 @@ else if(command==='hug')
    arr=functions.hug(args[0]);
    mention=client.users.cache.get(arr[1]);
    const Embed = new Discord.MessageEmbed()
-   .setColor('##000000')
+   .setColor('#85850d')
    .setTitle(`you hugged @${mention.username}`)
    .setImage(arr[0])
    message.channel.send(Embed);
@@ -140,6 +143,11 @@ else if(command==='hug')
 else if(command==='remindme')
 {
     remind.execute(message,args)
+}
+else if(command==='lyrics')
+{
+    lyrics.execute(args,message);
+
 }
 
  else if(command==='play')
