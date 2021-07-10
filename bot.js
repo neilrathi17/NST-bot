@@ -4,6 +4,7 @@ var logger = require('winston');
 const client = new Discord.Client();
 var ytdl=require('ytdl-core')
 var functions=require('./functions/interactions')
+var remind=require('./functions/remind')
 
 const queue = new Map();
 
@@ -135,6 +136,10 @@ else if(command==='hug')
    .setImage(arr[0])
    message.channel.send(Embed);
 
+}
+else if(command==='remindme')
+{
+    remind.execute(message,args)
 }
 
  else if(command==='play')

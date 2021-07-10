@@ -68,7 +68,7 @@ function tellme(args)
     else if(args==='tej')
         return '1) must break samson\'s bones \n2) Stole samson\'s birthday gift for Dj';
     else if(args==='saurav')
-        return 'leader of the jho bois\n saurav sanchutya'
+        return 'When I was younger, maybe junior high, I got roped into watching my 3 month old niece while my sister got her hair done. So when there i am, sitting in the waiting area of a hair salon with my niece and who walks in but Noxi.I was nervous as fuck, and just kept looking at him, as he read a magazine and waited, but didn\'t know what to say. Pretty soon though my niece started crying, and I\'m trying to quiet her down because I didn\'t want her to bother Noxi, but she wouldn\'t stop. Pretty soon he gets up and walks over. He started running his hands through her hair and asking what was wrong. I replied that she was probably hungry or something. So, Noxi put down his magazine, picked up my niece and lifted his shirt. He breast fed her right there in the middle of a hair salon. Chill guy, really nice about it'
 }
 
 function getUserFromMention(mention) {
