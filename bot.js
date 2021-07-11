@@ -103,7 +103,8 @@ client.on("message",function(message)
            {name:'~play',value:'\'best\': plays best song ever',inline:true},
            {name:'~play',value:'\'youtube link\' to play it',inline:true},
            {name:'~stop',value:'to disconnect the bot',inline:true},
-           {name:"~remindme",value:'\'time\' \'reminder\''}
+           {name:"~remindme",value:'\'time\' \'reminder\''},
+           {name:'~lyrics',value:"name of the song"}
 
        )
        message.reply(exampleEmbed)
@@ -139,6 +140,15 @@ else if(command==='hug')
    .setImage(arr[0])
    message.channel.send(Embed);
 
+}
+else if(command==='dice')
+{
+    result=functions.dice();
+    const Embed = new Discord.MessageEmbed()
+   .setColor('#85850d')
+   .setTitle(result)
+   message.channel.send(Embed)
+    
 }
 else if(command==='remindme')
 {

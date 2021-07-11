@@ -70,6 +70,15 @@ function tellme(args)
     else if(args==='saurav')
         return 'When I was younger, maybe junior high, I got roped into watching my 3 month old niece while my sister got her hair done. So when there i am, sitting in the waiting area of a hair salon with my niece and who walks in but Saurav.I was nervous as fuck, and just kept looking at him, as he read a magazine and waited, but didn\'t know what to say. Pretty soon though my niece started crying, and I\'m trying to quiet her down because I didn\'t want her to bother Saurav, but she wouldn\'t stop. Pretty soon he gets up and walks over. He started running his hands through her hair and asking what was wrong. I replied that she was probably hungry or something. So, Saurav put down his magazine, picked up my niece and lifted his shirt. He breast fed her right there in the middle of a hair salon. Chill guy, really nice about it'
 }
+function dice()
+{
+    rng=(Math.random());
+    console.log(rng)
+    if(rng>0.5)
+    return "heads"
+    else
+    return "tails"
+}
 
 function getUserFromMention(mention) {
 	if (!mention) return;
@@ -83,6 +92,6 @@ function getUserFromMention(mention) {
 		return mention;
 	}
 }
-module.exports={hug,slap,checkbday,tellme}
+module.exports={hug,slap,checkbday,tellme,dice}
 
 

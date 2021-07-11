@@ -1,7 +1,7 @@
 # NST-bot
 
 > <Subtitle>
->Nst-bot is a private bot for the navshakethat rubie discord server.
+>Nst-bot is a private bot for the navshakethat-Ruby discord server.
 
 
 ---
