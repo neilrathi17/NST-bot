@@ -1,3 +1,4 @@
+
 var ftl=require("findthelyrics")
 var discord=require('discord.js')
 function execute(args,message)
@@ -5,7 +6,7 @@ function execute(args,message)
   
         if(typeof args != "undefined" && args != null && args.length != null && args.length > 0)
         {
-            q=args;
+            var q=args.join(' ');
             var lyrics="";
             ftl.find(q ,function(err, resp)
              {
@@ -15,7 +16,6 @@ function execute(args,message)
                 } 
                 else
                  {
-                     console.log(args)
                     console.log(err)
                     if(err['code']==='noData')
                     {
