@@ -156,8 +156,10 @@ else if(command==='remindme')
 }
 else if(command==='lyrics')
 {
-    lyrics.execute(args,message);
-
+    
+    var input=args.toString();
+    lol=input.split('-')
+    arr=lyrics.find(lol[1], lol[0],message);
 }
 
  else if(command==='play')
