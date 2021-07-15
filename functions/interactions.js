@@ -62,11 +62,11 @@ function checkbday(n)
 function tellme(args)
 {
     if(args==="samson")
-        return 'ultra simp \nApril 3rd is his favourite day \nloves tea truffles and roasted peanuts';
+        return 'ultra simp \nApril 3rd is his favourite day \nloves tea truffles and roasted peanuts\n has 60% probability of being cancelled when(if) he becomes successful';
     else if(args==='dj')
         return 'lost samson\s diary and then laughed about it\n Then accused samson of pestering him\nAsked samson to make another diary for him\nSays he "has a meeting" but actualy goes and plays valorant with his friends.\nChallenged samson to a 1V1, results yet to be decided';
     else if(args==='tej')
-        return 'Number one. Steady hand. One day, Kim Jong Un need new heart. Tej do operation. But mistake! Kim Jong Un die! SSD very mad! tej hide in fishing boat, come to America. No English, no food, no money. Darryl give me job. Now Tej have house, American car and new woman. Darryl save life. My big secret. Tej kill Kim Jong Un on purpose. I good surgeon. The best!';
+        return 'Number one. Steady hand. One day, Kim Jong Un need new heart. Tej do operation. But mistake! Kim Jong Un die! SSD very mad! tej hide in fishing boat, come to Kerala. No Malyalam, no food, no money. Samson give me fishing job. Now Tej have house, Mallu car and new woman. Samson save life. My big secret. Tej kill Kim Jong Un on purpose. I good surgeon. The best!';
     else if(args==='saurav')
         return 'When I was younger, maybe junior high, I got roped into watching my 3 month old niece while my sister got her hair done. So when there i am, sitting in the waiting area of a hair salon with my niece and who walks in but Saurav.I was nervous as fuck, and just kept looking at him, as he read a magazine and waited, but didn\'t know what to say. Pretty soon though my niece started crying, and I\'m trying to quiet her down because I didn\'t want her to bother Saurav, but she wouldn\'t stop. Pretty soon he gets up and walks over. He started running his hands through her hair and asking what was wrong. I replied that she was probably hungry or something. So, Saurav put down his magazine, picked up my niece and lifted his shirt. He breast fed her right there in the middle of a hair salon. Chill guy, really nice about it'
     else if(args=='tina')

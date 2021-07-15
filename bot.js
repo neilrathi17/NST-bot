@@ -94,7 +94,7 @@ client.on("message",function(message)
             .setColor('#85850d')
        .setTitle("the following commands exist:")
        .addFields(
-           {name:'~tellme:',value:'dj \nsamson\nsaurav\ntej',inline:true},
+           {name:'~tellme:',value:'dj \nsamson\nsaurav\ntej\ntina\nnika\nneil',inline:true},
            {name:'~whereis',value:'samson\nsaurav\ntej\ndj\nneil',inline:true},
            {name:'~showme',value:'saurav',inline:true},
            {name:'~av',value:'@someone'},
