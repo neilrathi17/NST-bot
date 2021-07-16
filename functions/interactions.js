@@ -92,7 +92,6 @@ function dice()
 function cointoss()
 {
     rng=Math.floor(Math.random()*7);
-    var lol=getUserFromMention(args);
     return rng
 }
 function getUserFromMention(mention) {
