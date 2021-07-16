@@ -141,7 +141,7 @@ else if(command==='hug')
    message.channel.send(Embed);
 
 }
-else if(command==='dice')
+else if(command==='cointoss')
 {
     result=functions.dice();
     const Embed = new Discord.MessageEmbed()
@@ -153,6 +153,14 @@ else if(command==='dice')
 else if(command==='remindme')
 {
     remind.execute(message,args)
+}
+else if(command==='dice')
+{
+    result=functions.cointoss();
+    const Embed = new Discord.MessageEmbed()
+   .setColor('#85850d')
+   .setTitle(result)
+   message.channel.send(Embed)
 }
 else if(command==='lyrics')
 {

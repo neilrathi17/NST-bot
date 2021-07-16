@@ -89,7 +89,12 @@ function dice()
     else
     return "tails"
 }
-
+function cointoss()
+{
+    rng=Math.floor(Math.random()*7);
+    var lol=getUserFromMention(args);
+    return rng
+}
 function getUserFromMention(mention) {
 	if (!mention) return;
 
@@ -102,6 +107,6 @@ function getUserFromMention(mention) {
 		return mention;
 	}
 }
-module.exports={hug,slap,checkbday,tellme,dice}
+module.exports={hug,slap,checkbday,tellme,dice,cointoss}
 
 

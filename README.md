@@ -12,10 +12,14 @@
 
 
 ## Features
-- basic funtions mocking members
-- slap function
-- birthday reminder function
-- music bot funtioncality
+- basic personalised funtions for members
+- slap & hug 
+- birthday reminder 
+- music bot
+- toin coss and dice
+- lyrics function which returns lyrics scraped of genius
+- more funn stuff
+_
 
 ## Contributors
 - <a href="https://github.com/neilrathi17">Neil Rathi</a>
